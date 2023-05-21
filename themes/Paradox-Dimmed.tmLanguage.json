@@ -68,10 +68,7 @@
       }
     },
     {
-      "scope": [
-        "variable.lhs.paradox",
-        "rest.normal.paradox"
-      ],
+      "scope": ["variable.lhs.paradox", "rest.normal.paradox"],
       "settings": {
         "foreground": "#aaffaa"
       }
@@ -83,10 +80,7 @@
       }
     },
     {
-      "scope": [
-        "constant.rhs.paradox",
-        "constant.language.paradox"
-      ],
+      "scope": ["constant.rhs.paradox", "constant.language.paradox"],
       "settings": {
         "foreground": "#00b200"
       }
@@ -119,6 +113,12 @@
       "scope": "comment.line.number-sign.paradox",
       "settings": {
         "foreground": "#a5abaf"
+      }
+    },
+    {
+      "scope": "comment.line.double-number-sign.paradox",
+      "settings": {
+        "foreground": "#ba05fc"
       }
     }
   ]
