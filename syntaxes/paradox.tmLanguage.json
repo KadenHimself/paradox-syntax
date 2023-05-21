@@ -34,47 +34,29 @@
         }
       ]
     },
-    "options": {
+    "comment": {
       "patterns": [
         {
-          "name": "options.paradox",
-          "comment": "A line starting with ## is an option",
-          "match": "##",
+          "name": "comment.line.number-sign.paradox",
+          "comment": "A line starting with # is a comment",
+          "begin": "#",
           "captures": {
             "1": {
-              "name": "options.paradox"
+              "name": "punctuation.definition.comment.paradox"
             }
-          }
+          },
+          "end": "$\\n?"
         },
         {
-          "name": "scopes.options.paradox",
-          "comment": "Scope options",
-          "match": "##\\s*(scope)\\s*(\\=)\\s*([\\w]*)\\b",
+          "name": "comment.line.double-number-sign.paradox",
+          "comment": "A line starting with ## is a special comment",
+          "begin": "##",
           "captures": {
             "1": {
-              "name": "scopes.options.paradox"
-            },
-            "2": {
-              "name": "punctuation.scopes.options.paradox"
-            },
-            "3": {
-              "name": "simple.scopes.options.paradox"
+              "name": "punctuation.definition.comment.special.paradox"
             }
-          }
-        }
-      ]
-    },
-    "documentation": {
-      "patterns": [
-        {
-          "name": "documentation.paradox",
-          "comment": "A line starting with ### is for documentation",
-          "match": "###",
-          "captures": {
-            "1": {
-              "name": "punctuation.definition.documentation.paradox"
-            }
-          }
+          },
+          "end": "$\\n?"
         }
       ]
     },
